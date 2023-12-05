@@ -10,5 +10,5 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'DMWM-GESTION-OFFRE-EMPLOI';
+  title = 'GESTION-OFFRE-EMPLOI';
 }
