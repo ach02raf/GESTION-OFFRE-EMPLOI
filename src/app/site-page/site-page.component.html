@@ -1,0 +1,38 @@
+<div class="row sitePage-body p-0 m-0">
+  <h1 class="text-center d-flex justify-content-center align-items-center">
+    Les offres d'emploi de{{ ":" }}
+    <span class="sitePage-body-span">{{ id }}</span>
+  </h1>
+  <table class="table caption-top">
+    <thead>
+      <tr>
+        <th scope="col">Ref</th>
+        <th scope="col">Poste</th>
+        <th scope="col">Nom</th>
+        <th scope="col">Prenom</th>
+        <th scope="col">Email</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (offre of offres; track offre) {
+      <tr>
+        <th scope="row">{{ offre.ref }}</th>
+        <td>{{ offre.poste }}</td>
+        <td>{{ offre.nom }}</td>
+        <td>{{ offre["Prénom"] }}</td>
+        <td>{{ offre.email }}</td>
+        <td>
+          <button
+            type="button"
+            class="btn btn-primary"
+            (click)="showVoirPlus(offre)"
+          >
+            voir plus
+          </button>
+        </td>
+      </tr>
+      }@empty { Empty offre of offres }
+    </tbody>
+  </table>
+</div>

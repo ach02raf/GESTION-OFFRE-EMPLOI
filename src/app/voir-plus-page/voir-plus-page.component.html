@@ -1,0 +1,31 @@
+<div class="row voirPlusPage-body p-0 m-0">
+  <div class="row">
+    <h1 class="text-center p-2 voirPlusPage-body-h1">
+      {{ data.poste + " à " + data.zone + " " + data.ref }}
+    </h1>
+  </div>
+  <div class="row">
+    <p>Nom : {{ data.nom }}</p>
+  </div>
+  <div class="row">
+    <p>Prénom : {{ data["Prénom"] }}</p>
+  </div>
+  <div class="row">
+    <p>Email : {{ data.email }}</p>
+  </div>
+  <div class="row">
+    <p>Telephone : {{ data.telephone }}</p>
+  </div>
+  <div class="row">
+    <p>pays d'origine : {{ data.pays }}</p>
+  </div>
+  <div class="row">
+    <p>la code postale : {{ data.codePostale }}</p>
+  </div>
+  <div class="row">
+    <p>lettre de motivation : {{ data.lettreMotivation }}</p>
+  </div>
+  <div class="row">
+    <a target="blanc" [href]="cv">voir le CV</a>
+  </div>
+</div>

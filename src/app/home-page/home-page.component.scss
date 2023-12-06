@@ -1,0 +1,19 @@
+.HomePage {
+  &-body {
+    width: 90%;
+    height: 100vh;
+    background-color: #e3def5;
+    float: right;
+    &-site {
+      display: block;
+      margin: auto;
+      &-img {
+        max-width: 350px;
+        &:hover {
+          transform: scale(1.1);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

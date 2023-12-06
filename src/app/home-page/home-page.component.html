@@ -1,0 +1,20 @@
+<div class="row HomePage-body p-0 m-0">
+  <h1 class="text-center d-flex justify-content-center align-items-center">
+    Gestion de nos systèmes et plateformes
+  </h1>
+  @for (site of tabSite; track site) {
+
+  <div
+    class="col-lg-4 col-md-6 HomePage-body-site"
+    (click)="ShowClickSite(site.name)"
+  >
+    <img
+      class="HomePage-body-site-img d-block m-auto"
+      [src]="site.image"
+      [alt]="site.name"
+      [title]="site.name"
+    />
+    <p class="text-center p-3">{{ site.name }}</p>
+  </div>
+  } @empty { Empty site of tabSites }
+</div>

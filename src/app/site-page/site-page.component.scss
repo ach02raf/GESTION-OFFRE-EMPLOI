@@ -1,0 +1,11 @@
+.sitePage {
+  &-body {
+    width: 90%;
+    height: 100vh;
+    background-color: #e3def5;
+    float: right;
+    &-span {
+      color: #ab9de2;
+    }
+  }
+}
