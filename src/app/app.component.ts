@@ -13,7 +13,7 @@ export class AppComponent {
     this.readOffres();
   }
   async readOffres() {
-    this.offres = await this.getAllOffres.getAllOffre();
+    this.offres = await this.getAllOffres.getAllOffre('spacy-and-cosy');
     this.getAllOffres.downloadFile(this.offres[0].CV);
     console.log(this.offres[0].CV);
   }

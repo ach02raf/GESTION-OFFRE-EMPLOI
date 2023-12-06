@@ -18,9 +18,9 @@ export class GetAllOffreService {
     private storage: Storage,
     private http: HttpClient
   ) {}
-  async getAllOffre() {
+  async getAllOffre(nameWebSite: string) {
     return (
-      await getDocs(query(collection(this.firestore, 'spacy-and-cosy')))
+      await getDocs(query(collection(this.firestore, nameWebSite)))
     ).docs.map((robots) => robots.data());
   }
   downloadFile(fileName: string) {
