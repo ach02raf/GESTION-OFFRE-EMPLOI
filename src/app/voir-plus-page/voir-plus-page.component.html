@@ -26,6 +26,16 @@
     <p>lettre de motivation : {{ data.lettreMotivation }}</p>
   </div>
   <div class="row">
-    <a target="blanc" [href]="cv">voir le CV</a>
+    <div class="col d-flex align-items-center justify-content-center">
+      <a class="text-decoration-none m-2" target="blanc" [href]="cv"
+        >voir le cv</a
+      >
+      <button type="button" class="btn btn-primary m-2" (click)="emailEntretien()">
+        envoyer email d'etretien
+      </button>
+      <button type="button" class="btn btn-danger m-2" (click)="emailRefus()">
+        envoyer email de refus
+      </button>
+    </div>
   </div>
 </div>
